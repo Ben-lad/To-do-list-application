@@ -1,0 +1,117 @@
+body {
+  /* background-color: blue; */
+  font-family: Arial, sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100');
+  background-position: center;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 10rem;
+  box-shadow: 5px 5px 5px rgb(68 68 68 / 0.6);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)';
+  zoom: 1;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+h1 {
+  text-align: center;
+  color: blue;
+}
+
+input[type='text'] {
+  width: 80%;
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  outline: none;
+}
+
+#addButton {
+  position: relative;
+  display: block;
+  width: 50%;
+  padding: 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 2rem;
+  display: block;
+  margin-left: 6rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.delete-button,
+.edit-button {
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+  background-color: #4caf50;
+  width: 80px;
+  height: 50px;
+  text-align: center;
+  margin-top: -0.1rem;
+  color: #fff;
+}
+
+.delete-button:hover,
+.edit-button:hover {
+  color: #000;
+  background-color: transparent;
+}
+
+.edit-input {
+  width: 70%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.fa-trash,
+.fa-edit {
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  #addButton {
+    margin-left: 6rem;
+  }
+}
+@media (max-width: 320px) {
+  #addButton {
+    margin-left: 6rem;
+  }
+}
